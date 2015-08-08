@@ -1,16 +1,15 @@
 <?php
+
 /**
  * Created by PhpStorm.
  * User: ryan.catlin
  * Date: 8/8/15
  * Time: 4:26 PM
  */
-
 namespace RCatlin\LearnPHPSpec;
 
 /**
  * Class Wheels
- * @package RCatlin\LearnPHPSpec
  */
 class Wheels
 {
@@ -24,6 +23,7 @@ class Wheels
 
     /**
      * Wheels constructor.
+     *
      * @param Brand $brand
      * @param $count
      * @param float $diameter
@@ -37,6 +37,7 @@ class Wheels
 
     /**
      * @param $diameter
+     *
      * @return $this
      */
     public function setDiameter($diameter)

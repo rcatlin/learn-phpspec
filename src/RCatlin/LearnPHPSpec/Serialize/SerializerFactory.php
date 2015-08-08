@@ -1,15 +1,17 @@
-<?php namespace RCatlin\LearnPHPSpec\Serialize;
+<?php
+
+namespace RCatlin\LearnPHPSpec\Serialize;
 
 use RCatlin\LearnPHPSpec\Car;
 
 /**
  * Class SerializerFactory
- * @package RCatlin\LearnPHPSpec\Serialize
  */
 class SerializerFactory
 {
     /**
      * @param $object
+     *
      * @return SerializeInterface
      */
     public function get($object)

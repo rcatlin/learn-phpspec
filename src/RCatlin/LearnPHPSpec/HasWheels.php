@@ -1,15 +1,14 @@
-<?php namespace RCatlin\LearnPHPSpec;
+<?php
 
-use RCatlin\LearnPHPSpec\Wheel;
+namespace RCatlin\LearnPHPSpec;
 
 /**
  * Trait HasWheels
- * @package RCatlin\LearnPHPSpec
  */
 trait HasWheels
 {
     /**
-     * @var \RCatlin\LearnPHPSpec\Wheels $wheels
+     * @var \RCatlin\LearnPHPSpec\Wheels
      */
     protected $wheels;
 
@@ -23,6 +22,7 @@ trait HasWheels
 
     /**
      * @param Wheels $wheels
+     *
      * @return $this
      */
     public function setWheels($wheels)
@@ -31,6 +31,4 @@ trait HasWheels
 
         return $this;
     }
-
-
 }

@@ -1,9 +1,11 @@
-<?php namespace RCatlin\LearnPHPSpec;
+<?php
+
+namespace RCatlin\LearnPHPSpec;
 
 trait HasCount
 {
     /**
-     * @var int $count
+     * @var int
      */
     protected $count;
 
@@ -17,6 +19,7 @@ trait HasCount
 
     /**
      * @param int $count
+     *
      * @return $this
      */
     public function setCount($count)
@@ -25,6 +28,4 @@ trait HasCount
 
         return $this;
     }
-
-
 }

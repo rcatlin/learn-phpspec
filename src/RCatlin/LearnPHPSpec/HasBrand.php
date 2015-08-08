@@ -1,13 +1,14 @@
-<?php namespace RCatlin\LearnPHPSpec;
+<?php
+
+namespace RCatlin\LearnPHPSpec;
 
 /**
  * Trait HasBrand
- * @package RCatlin\LearnPHPSpec
  */
 trait HasBrand
 {
     /**
-     * @var \RCatlin\LearnPHPSpec\Brand $brand
+     * @var \RCatlin\LearnPHPSpec\Brand
      */
     protected $brand;
 
@@ -21,6 +22,7 @@ trait HasBrand
 
     /**
      * @param Brand $brand
+     *
      * @return $this
      */
     public function setBrand(Brand $brand)
@@ -29,6 +31,4 @@ trait HasBrand
 
         return $this;
     }
-
-
 }

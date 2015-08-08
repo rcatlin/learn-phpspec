@@ -1,8 +1,9 @@
-<?php namespace RCatlin\LearnPHPSpec\Serialize;
+<?php
+
+namespace RCatlin\LearnPHPSpec\Serialize;
 
 /**
  * Class EngineSerializer
- * @package RCatlin\LearnPHPSpec\Serialize
  */
 class EngineSerializer implements SerializeInterface
 {

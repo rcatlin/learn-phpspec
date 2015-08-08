@@ -1,8 +1,9 @@
-<?php namespace RCatlin\LearnPHPSpec\Serialize;
+<?php
+
+namespace RCatlin\LearnPHPSpec\Serialize;
 
 /**
  * Class DoorsSerializer
- * @package RCatlin\LearnPHPSpec\Serialize
  */
 class DoorsSerializer implements SerializeInterface
 {
@@ -24,7 +25,7 @@ class DoorsSerializer implements SerializeInterface
         $object = $this->getObject();
 
         return [
-          'count' => $object->getCount()
+          'count' => $object->getCount(),
         ];
     }
 }

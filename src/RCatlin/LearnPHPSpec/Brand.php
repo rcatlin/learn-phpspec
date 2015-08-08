@@ -1,8 +1,9 @@
-<?php namespace RCatlin\LearnPHPSpec;
+<?php
+
+namespace RCatlin\LearnPHPSpec;
 
 /**
  * Class Brand
- * @package RCatlin\LearnPHPSpec
  */
 class Brand
 {
@@ -15,6 +16,7 @@ class Brand
 
     /**
      * Brand constructor.
+     *
      * @param string $name
      * @param string $originCountry
      */
@@ -34,6 +36,7 @@ class Brand
 
     /**
      * @param string $originCountry
+     *
      * @return $this
      */
     public function setOriginCountry($originCountry)
@@ -42,6 +45,4 @@ class Brand
 
         return $this;
     }
-
-
 }

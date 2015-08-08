@@ -1,8 +1,9 @@
-<?php namespace RCatlin\LearnPHPSpec\Serialize;
+<?php
+
+namespace RCatlin\LearnPHPSpec\Serialize;
 
 /**
  * Class IsSerializer
- * @package RCatlin\LearnPHPSpec\Serialize
  */
 trait IsSerializer
 {
@@ -36,6 +37,7 @@ trait IsSerializer
 
     /**
      * @param SerializerFactory $factory
+     *
      * @return $this
      */
     public function setFactory($factory)
@@ -49,5 +51,4 @@ trait IsSerializer
     {
         return $this->getFactory()->get($object)->serialize();
     }
-
 }

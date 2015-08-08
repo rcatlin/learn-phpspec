@@ -1,14 +1,15 @@
-<?php namespace RCatlin\LearnPHPSpec;
+<?php
+
+namespace RCatlin\LearnPHPSpec;
 
 /**
  * Trait HasDoors
- * @package RCatlin\LearnPHPSpec
  */
 trait HasDoors
 {
-    /**
-     * @var \RCatlin\LearnPHPSpec\Doors $doors
-     */
+   /**
+    * @var \RCatlin\LearnPHPSpec\Doors
+    */
    protected $doors;
 
     /**
@@ -27,4 +28,3 @@ trait HasDoors
         $this->doors = $doors;
     }
 }
-

@@ -1,8 +1,9 @@
-<?php namespace RCatlin\LearnPHPSpec;
+<?php
+
+namespace RCatlin\LearnPHPSpec;
 
 /**
  * Class Color
- * @package RCatlin\LearnPHPSpec
  */
 class Color
 {
@@ -10,6 +11,7 @@ class Color
 
     /**
      * Color constructor.
+     *
      * @param $name
      */
     public function __construct($name)

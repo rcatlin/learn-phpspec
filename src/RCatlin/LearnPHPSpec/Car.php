@@ -1,8 +1,9 @@
-<?php namespace RCatlin\LearnPHPSpec;
+<?php
+
+namespace RCatlin\LearnPHPSpec;
 
 /**
  * Class Car
- * @package RCatlin\LearnPHPSpec
  */
 class Car
 {
@@ -14,6 +15,7 @@ class Car
 
     /**
      * Car constructor.
+     *
      * @param Color $color
      * @param Doors $doors
      * @param Engine $engine

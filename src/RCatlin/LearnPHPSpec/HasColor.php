@@ -1,13 +1,14 @@
-<?php namespace RCatlin\LearnPHPSpec;
+<?php
+
+namespace RCatlin\LearnPHPSpec;
 
 /**
  * Trait HasColor
- * @package RCatlin\LearnPHPSpec
  */
 trait HasColor
 {
     /**
-     * @var \RCatlin\LearnPHPSpec\Color $color
+     * @var \RCatlin\LearnPHPSpec\Color
      */
     protected $color;
 
@@ -21,6 +22,7 @@ trait HasColor
 
     /**
      * @param Color $color
+     *
      * @return $this
      */
     public function setColor(Color $color)
@@ -29,6 +31,4 @@ trait HasColor
 
         return $this;
     }
-
-
 }

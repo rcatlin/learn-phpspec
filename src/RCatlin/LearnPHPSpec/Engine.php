@@ -1,20 +1,21 @@
-<?php namespace RCatlin\LearnPHPSpec;
+<?php
+
+namespace RCatlin\LearnPHPSpec;
 
 /**
  * Class Engine
- * @package RCatlin\LearnPHPSpec
  */
 class Engine
 {
     /**
      * Type V
      */
-    const TYPE_V = "V";
+    const TYPE_V = 'V';
 
     /**
      * Type Straight
      */
-    const TYPE_STRAIGHT = "straight";
+    const TYPE_STRAIGHT = 'straight';
 
     /**
      * @var array
@@ -38,6 +39,7 @@ class Engine
 
     /**
      * Engine constructor.
+     *
      * @param int $numCylinders
      * @param string $type
      * @param float $numLiters
@@ -49,11 +51,12 @@ class Engine
         $this->setNumLiters($numLiters);
     }
 
-
     /**
      * @param null $type
-     * @return $this
+     *
      * @throws \Exception
+     *
+     * @return $this
      */
     public function setType($type = null)
     {
@@ -79,6 +82,7 @@ class Engine
 
     /**
      * @param $numCylinders
+     *
      * @return $this
      */
     public function setNumCylinders($numCylinders)

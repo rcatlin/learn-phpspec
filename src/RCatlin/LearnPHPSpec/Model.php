@@ -1,8 +1,9 @@
-<?php namespace RCatlin\LearnPHPSpec;
+<?php
+
+namespace RCatlin\LearnPHPSpec;
 
 /**
  * Class Model
- * @package RCatlin\LearnPHPSpec
  */
 class Model
 {
@@ -16,6 +17,7 @@ class Model
 
     /**
      * Model constructor.
+     *
      * @param Brand $brand
      * @param $name
      * @param int $year
@@ -37,6 +39,7 @@ class Model
 
     /**
      * @param int $year
+     *
      * @return $this
      */
     public function setYear($year)

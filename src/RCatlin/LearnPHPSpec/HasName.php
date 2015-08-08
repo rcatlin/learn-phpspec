@@ -1,13 +1,14 @@
-<?php namespace RCatlin\LearnPHPSpec;
+<?php
+
+namespace RCatlin\LearnPHPSpec;
 
 /**
  * Trait HasName
- * @package RCatlin\LearnPHPSpec
  */
 trait HasName
 {
     /**
-     * @var string $name
+     * @var string
      */
     protected $name;
 
@@ -21,6 +22,7 @@ trait HasName
 
     /**
      * @param string $name
+     *
      * @return $this
      */
     public function setName($name)
@@ -29,6 +31,4 @@ trait HasName
 
         return $this;
     }
-
-
 }

@@ -1,8 +1,9 @@
-<?php namespace RCatlin\LearnPHPSpec\Serialize;
+<?php
+
+namespace RCatlin\LearnPHPSpec\Serialize;
 
 /**
  * Class ColorSerializer
- * @package RCatlin\LearnPHPSpec\Serialize
  */
 class ColorSerializer implements SerializeInterface
 {
@@ -24,7 +25,7 @@ class ColorSerializer implements SerializeInterface
         $object = $this->getObject();
 
         return [
-            'name' => $object->getName()
+            'name' => $object->getName(),
         ];
     }
 }

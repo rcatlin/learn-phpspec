@@ -1,13 +1,14 @@
-<?php namespace RCatlin\LearnPHPSpec;
+<?php
+
+namespace RCatlin\LearnPHPSpec;
 
 /**
  * Trait HasModel
- * @package RCatlin\LearnPHPSpec
  */
 trait HasModel
 {
     /**
-     * @var \RCatlin\LearnPHPSpec\Model $model
+     * @var \RCatlin\LearnPHPSpec\Model
      */
     protected $model;
 
@@ -21,6 +22,7 @@ trait HasModel
 
     /**
      * @param Model $model
+     *
      * @return $this
      */
     public function setModel($model)

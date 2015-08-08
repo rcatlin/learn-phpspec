@@ -1,8 +1,9 @@
-<?php namespace RCatlin\LearnPHPSpec\Serialize;
+<?php
+
+namespace RCatlin\LearnPHPSpec\Serialize;
 
 /**
  * Interface SerializeInterface
- * @package RCatlin\LearnPHPSpec\Serialize
  */
 interface SerializeInterface
 {
