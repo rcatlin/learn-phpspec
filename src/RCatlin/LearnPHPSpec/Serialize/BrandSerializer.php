@@ -3,14 +3,15 @@
 namespace RCatlin\LearnPHPSpec\Serialize;
 
 /**
- * Class ModelSerializer
+ * Class BrandSerializer
+ * @package RCatlin\LearnPHPSpec\Serialize
  */
-class ModelSerializer implements SerializeInterface
+class BrandSerializer implements SerializeInterface
 {
     use IsSerializer;
 
     /**
-     * @return \RCatlin\LearnPHPSpec\Model
+     * @return \RCatlin\LearnPHPSpec\Brand
      */
     public function getObject()
     {
@@ -25,9 +26,8 @@ class ModelSerializer implements SerializeInterface
         $object = $this->getObject();
 
         return [
-            'brand' => $this->serializeObject($object->getBrand()),
             'name' => $object->getName(),
-            'year' => $object->getYear(),
+            'origin_country' => $object->getOriginCountry(),
         ];
     }
 }
