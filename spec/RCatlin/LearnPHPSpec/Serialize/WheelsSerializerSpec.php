@@ -3,7 +3,6 @@
 namespace spec\RCatlin\LearnPHPSpec\Serialize;
 
 use PhpSpec\ObjectBehavior;
-use Prophecy\Argument;
 use RCatlin\LearnPHPSpec\Brand;
 use RCatlin\LearnPHPSpec\Serialize\BrandSerializer;
 use RCatlin\LearnPHPSpec\Serialize\SerializerFactory;
@@ -21,12 +20,11 @@ class WheelsSerializerSpec extends ObjectBehavior
      */
     private $factory;
 
-
     /**
      * @param \RCatlin\LearnPHPSpec\Wheels $wheels
      * @param \RCatlin\LearnPHPSpec\Serialize\SerializerFactory $factory
      */
-    function let(Wheels $wheels, SerializerFactory $factory)
+    public function let(Wheels $wheels, SerializerFactory $factory)
     {
         $this->wheels = $wheels;
         $this->factory = $factory;
@@ -34,12 +32,12 @@ class WheelsSerializerSpec extends ObjectBehavior
         $this->beConstructedWith($this->wheels, $this->factory);
     }
 
-    function it_is_initializable()
+    public function it_is_initializable()
     {
         $this->shouldHaveType('RCatlin\LearnPHPSpec\Serialize\WheelsSerializer');
     }
 
-    function it_serializes(Brand $brand, BrandSerializer $brandSerializer)
+    public function it_serializes(Brand $brand, BrandSerializer $brandSerializer)
     {
         $this->wheels->getCount()->willReturn(4);
         $this->wheels->getDiameter()->willReturn(28.75);

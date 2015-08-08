@@ -4,7 +4,6 @@ namespace RCatlin\LearnPHPSpec\Serialize;
 
 /**
  * Class BrandSerializer
- * @package RCatlin\LearnPHPSpec\Serialize
  */
 class BrandSerializer implements SerializeInterface
 {

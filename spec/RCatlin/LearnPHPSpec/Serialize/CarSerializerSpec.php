@@ -3,7 +3,6 @@
 namespace spec\RCatlin\LearnPHPSpec\Serialize;
 
 use PhpSpec\ObjectBehavior;
-use Prophecy\Argument;
 use RCatlin\LearnPHPSpec\Car;
 use RCatlin\LearnPHPSpec\Color;
 use RCatlin\LearnPHPSpec\Doors;
@@ -33,7 +32,7 @@ class CarSerializerSpec extends ObjectBehavior
      * @param \RCatlin\LearnPHPSpec\Car $car
      * @param \RCatlin\LearnPHPSpec\Serialize\SerializerFactory $factory
      */
-    function let(Car $car, SerializerFactory $factory)
+    public function let(Car $car, SerializerFactory $factory)
     {
         $this->car = $car;
         $this->factory = $factory;
@@ -41,7 +40,7 @@ class CarSerializerSpec extends ObjectBehavior
         $this->beConstructedWith($car, $factory);
     }
 
-    function it_is_initializable()
+    public function it_is_initializable()
     {
         $this->shouldHaveType('RCatlin\LearnPHPSpec\Serialize\CarSerializer');
     }
@@ -58,7 +57,7 @@ class CarSerializerSpec extends ObjectBehavior
      * @param \RCatlin\LearnPHPSpec\Wheels $wheels
      * @param \RCatlin\LearnPHPSpec\Serialize\WheelsSerializer $wheelsSerializer
      */
-    function it_serializes(
+    public function it_serializes(
         Color $color,
         ColorSerializer $colorSerializer,
         Doors $doors,
@@ -69,8 +68,7 @@ class CarSerializerSpec extends ObjectBehavior
         ModelSerializer $modelSerializer,
         Wheels $wheels,
         WheelsSerializer $wheelsSerializer
-    )
-    {
+    ) {
         // Car returns mocked objects
         $this->car->getColor()->willReturn($color);
         $this->car->getDoors()->willReturn($doors);

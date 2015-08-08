@@ -3,7 +3,6 @@
 namespace spec\RCatlin\LearnPHPSpec\Serialize;
 
 use PhpSpec\ObjectBehavior;
-use Prophecy\Argument;
 use RCatlin\LearnPHPSpec\Brand;
 use RCatlin\LearnPHPSpec\Serialize\SerializerFactory;
 
@@ -23,7 +22,7 @@ class BrandSerializerSpec extends ObjectBehavior
      * @param \RCatlin\LearnPHPSpec\Brand $brand
      * @param \RCatlin\LearnPHPSpec\Serialize\SerializerFactory $factory
      */
-    function let(Brand $brand, SerializerFactory $factory)
+    public function let(Brand $brand, SerializerFactory $factory)
     {
         $this->brand = $brand;
         $this->factory = $factory;
@@ -31,12 +30,12 @@ class BrandSerializerSpec extends ObjectBehavior
         $this->beConstructedWith($this->brand, $this->factory);
     }
 
-    function it_is_initializable()
+    public function it_is_initializable()
     {
         $this->shouldHaveType('RCatlin\LearnPHPSpec\Serialize\BrandSerializer');
     }
 
-    function it_serializes()
+    public function it_serializes()
     {
         $this->brand->getName()->willReturn('brand name');
         $this->brand->getOriginCountry()->willReturn('origin country');

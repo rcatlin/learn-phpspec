@@ -3,7 +3,6 @@
 namespace spec\RCatlin\LearnPHPSpec\Serialize;
 
 use PhpSpec\ObjectBehavior;
-use Prophecy\Argument;
 use RCatlin\LearnPHPSpec\Brand;
 use RCatlin\LearnPHPSpec\Model;
 use RCatlin\LearnPHPSpec\Serialize\BrandSerializer;
