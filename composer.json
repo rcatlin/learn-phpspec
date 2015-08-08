@@ -1,0 +1,20 @@
+{
+    "name": "rcatlin/learn-php-spec",
+    "description": "Learning PHP Spec",
+    "require": {
+        "phpspec/phpspec": "^2.2",
+        "fabpot/php-cs-fixer": "^1.10"
+    },
+    "autoload": {
+        "psr-4": {
+            "RCatlin\\LearnPHPSpec\\": "src/RCatlin/LearnPHPSpec"
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ryan Catlin",
+            "email": "ryan.catlin@gmail.com"
+        }
+    ]
+}
