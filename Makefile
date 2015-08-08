@@ -1,3 +1,5 @@
+.PHONY: spec
+
 composer:
 		composer validate
 		composer install
@@ -5,5 +7,5 @@ composer:
 cs: composer
 		vendor/bin/php-cs-fixer fix --config-file=.php_cs --verbose --diff
 
-spec: composer
+spec:
 		vendor/bin/phpspec run
