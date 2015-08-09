@@ -1,0 +1,26 @@
+language: php
+
+sudo: false
+
+matrix:
+  fast_finish: true
+  include:
+    - php: 5.5
+    - php: 5.6
+  allow_failures:
+    - php: 7
+    - php: hhvm
+
+cache:
+  directories:
+    - $HOME/.composer/cache
+
+before_install:
+    - composer self-update
+    - composer validate
+
+install:
+    - composer install
+
+script:
+    - make spec
